@@ -16,7 +16,7 @@
 
 # Ufuktan Yıldırım
 
-Identifying common problems, conceptualizing solutions through user interfaces and building MVPs.
+Identifying common problems and building MVPs.
 
 ## Contact
 
