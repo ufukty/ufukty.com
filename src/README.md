@@ -11,6 +11,5 @@ Profiles:
 -   [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ufukty)
 -   [StackOverflow](https://stackoverflow.com/users/10272920/ufukty)
 -   [X](https://x.com/ufukty)
--   [Bluesky](https://bsky.app/profile/ufukty.bsky.social)
 -   [Hugging Face](https://huggingface.co/ufukty)
 -   [Reddit](https://www.reddit.com/user/ufukty/comments/?sort=top)
