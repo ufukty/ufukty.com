@@ -1,28 +1,10 @@
-{#profile-shot}
-![Profile shot](/.assets/profile.jpg)
-
-<style>
-#profile-shot {
-  & > img {
-    display:block;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 4em;
-
-    width: min(60%, 230px);
-  }
-}
-</style>
-
 # Ufuktan Yıldırım
 
 Identifying common problems and building MVPs.
 
-## Contact
+Contact: <a href="mailto:ufukty@gmail.com">ufukty@gmail.com</a>
 
-<a href="mailto:ufukty@gmail.com">ufukty@gmail.com</a>
-
-## Profiles
+Profiles:
 
 -   [GitHub](https://github.com/ufukty)
 -   [LinkedIn](https://linkedin.com/in/ufukty)
