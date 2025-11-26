@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  main img {
+    filter: invert() hue-rotate(180deg);
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 650px) 1fr;
+  width: 100vw;
+  gap: 20px;
+
+  & > * {
+    grid-column: 2 / 3;
+  }
+
+  img {
+    width: auto;
+    border-radius: 0;
+  }
+
+  & > p:has(img) {
+    width: 100%;
+    height: min-content;
+    grid-column: 1 / 4;
+    text-align: center;
+    overflow-x: scroll;
+    padding: 20px;
+
+    & > img:not(.actual-size) {
+      max-width: 100%;
+    }
+  }
+
+  a {
+    word-wrap: anywhere;
+  }
+
+  .radio-group {
+    display: flex;
+    width: min-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    gap: 1px;
+
+    border: 1px solid light-dark(#eee, #333);
+    border-radius: 4px;
+
+    & > div {
+      & > input {
+        display: none;
+      }
+
+      & > label {
+        cursor: pointer;
+        display: block;
+        padding: 10px 20px;
+      }
+
+      &:has(input:checked) > label {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.radio-group:has(div > input#radio-deals-seed:not(:checked)) ~ p > .only-deals-seed,
+.radio-group:has(div > input#radio-deals-early:not(:checked)) ~ p > .only-deals-early,
+.radio-group:has(div > input#radio-deals-late:not(:checked)) ~ p > .only-deals-late,
+.radio-group:has(div > input#radio-deals-acq:not(:checked)) ~ p > .only-deals-acq {
+  display: none;
+}
