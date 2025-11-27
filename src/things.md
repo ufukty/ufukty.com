@@ -10,7 +10,7 @@ I'll complete this lisf of my previous attempts on solving social problems with 
 
 Yet another app for doers but Logbook doesn't want you to plan.
 
-### University
+## University
 
 Research from my years in the Master's program at Ankara University.
 
