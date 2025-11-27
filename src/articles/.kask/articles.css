@@ -13,7 +13,7 @@ main {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 650px) 1fr;
   width: 100vw;
-  gap: 20px 0;
+  gap: 0 20px;
 
   & > * {
     grid-column: 2 / 3;
@@ -31,6 +31,7 @@ main {
     text-align: center;
     overflow-x: scroll;
     padding: 20px;
+    box-sizing: border-box;
 
     & > img:not(.actual-size) {
       max-width: 100%;
