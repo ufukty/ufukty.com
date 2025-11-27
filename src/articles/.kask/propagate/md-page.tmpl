@@ -1,0 +1,56 @@
+{{define "toc-item-helper"}}
+<a href="#{{.ID}}" class="toc{{.Level}}">{{.Title}}</a>
+{{with .Children}}
+<ul>
+  {{range .}}
+  <li>{{template "toc-item-helper" .}}</li>
+  {{end}}
+</ul>
+{{end}}
+{{end}}
+
+{{define "toc-item"}}
+<ul>
+  <li>{{template "toc-item-helper" .}}</li>
+</ul>
+{{end}}
+
+{{define "markdown-page"}}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Node.Title}}</title>
+
+    <meta name="title" content="Ufuktan Yıldırım — Software Developer">
+    <meta name="description" content="Software developer blending design and engineering. Discover latest work.">
+
+    {{template "favicons"}}
+    {{template "social-cards"}}
+
+    {{with .Stylesheets}}
+    {{range .}}
+    <link rel="stylesheet" href="{{.}}">{{end}}
+    {{end}}
+
+    {{template "tags" .}}
+  </head>
+
+  <body>
+    {{template "nav" .}}
+
+    {{with .Markdown}}{{with .Toc}}
+    <nav id="toc">
+      <div class="nav-header">In this page</div>
+      {{template "toc-item" (index .Children 0)}}
+    </nav>
+    {{end}}{{end}}
+
+    <main>{{.Markdown.Content}}</main>
+  </body>
+
+</html>
+{{end}}
