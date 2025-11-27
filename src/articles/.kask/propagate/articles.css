@@ -5,6 +5,8 @@
 }
 
 main {
+  display: contents;
+
   img {
     width: auto;
     border-radius: 0;
@@ -76,4 +78,38 @@ main {
 .radio-group:has(div > input#radio-deal-grid-late:not(:checked)) ~ p > .only-deal-grid-late,
 .radio-group:has(div > input#radio-deal-grid-seed:not(:checked)) ~ p > .only-deal-grid-seed {
   display: none;
+}
+
+html {
+  position: relative;
+}
+
+@media screen and (width<1500px) {
+  #toc {
+    display: none;
+  }
+}
+
+#toc {
+  grid-column: 3 / 4;
+  grid-row: 4;
+
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2em;
+
+  margin: 0 auto;
+  grid-row: 3;
+  padding: 16px;
+  line-height: 2em;
+
+  font-size: 0.9rem;
+
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
