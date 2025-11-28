@@ -107,11 +107,10 @@ html {
 @media screen and (1000px<width<1500px) {
   #toc {
     transition: 120ms opacity ease-out;
-    overflow: hidden;
 
     &:not(:hover) {
       opacity: 0.1;
-      width: calc(50% - min(100%, 700px) / 2 - 4 * calc(1em + 1vw));
+      width: calc(50% - min(100%, 700px) / 2 - 2 * calc(1em + 1vw));
     }
 
     & > ul > li {
@@ -119,11 +118,9 @@ html {
       overflow: hidden;
 
       & > a {
-        line-height: 2em;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        background-color: light-dark(#fff, #000);
       }
     }
   }
