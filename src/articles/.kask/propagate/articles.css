@@ -27,18 +27,24 @@ main {
   }
 
   .radio-group {
-    display: flex;
-    width: min-content;
     margin: 0 auto;
+
+    display: flex;
     justify-content: center;
     align-content: center;
     gap: 1px;
+
+    max-width: 100%;
+    overflow: hidden;
 
     border: 1px solid light-dark(#eee, #333);
     border-radius: 6px;
     padding: 2px;
 
     & > div {
+      overflow: hidden;
+      flex-shrink: 2;
+
       & > input {
         display: none;
       }
@@ -46,9 +52,11 @@ main {
       & > label {
         cursor: pointer;
         display: block;
-        padding: 10px 20px 8px;
+        padding: 10px clamp(0px, 3vw, 20px) 8px;
         text-wrap: nowrap;
         border-radius: 4px;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
 
       &:has(input:checked) > label {

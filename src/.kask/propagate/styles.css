@@ -28,7 +28,7 @@ body {
   margin: 0;
 
   display: grid;
-  grid-template-columns: minmax(2em, 1fr) minmax(auto, 700px) minmax(2em, 1fr);
+  grid-template-columns: minmax(calc(1em + 1vw), 1fr) minmax(auto, 700px) minmax(calc(1em + 1vw), 1fr);
 }
 
 main {
@@ -80,7 +80,7 @@ a {
 }
 
 nav {
-  padding: 2em 0;
+  padding: calc(2em + 2vw) 0;
   margin: -10px -10px;
   width: min(100%, 700px);
   grid-column: 2 / 3;
