@@ -39,7 +39,8 @@ main {
     gap: 1px;
 
     border: 1px solid light-dark(#eee, #333);
-    border-radius: 4px;
+    border-radius: 6px;
+    padding: 2px;
 
     & > div {
       & > input {
@@ -51,10 +52,12 @@ main {
         display: block;
         padding: 10px 20px 8px;
         text-wrap: nowrap;
+        border-radius: 4px;
       }
 
       &:has(input:checked) > label {
         color: light-dark(#000, #fff);
+        background-color: light-dark(#eee, #333);
       }
     }
   }
