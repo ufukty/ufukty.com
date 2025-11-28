@@ -20,10 +20,6 @@ main {
     overflow-x: scroll;
     padding: 20px;
     box-sizing: border-box;
-
-    & > img:not(.actual-size) {
-      max-width: 100%;
-    }
   }
 
   a {
