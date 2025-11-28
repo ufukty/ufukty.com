@@ -80,6 +80,21 @@ main {
   display: none;
 }
 
+.radio-group:has(div > input#radio-dollars-all:not(:checked)) ~ p > .only-dollars-all,
+.radio-group:has(div > input#radio-dollars-seed:not(:checked)) ~ p > .only-dollars-seed,
+.radio-group:has(div > input#radio-dollars-early:not(:checked)) ~ p > .only-dollars-early,
+.radio-group:has(div > input#radio-dollars-late:not(:checked)) ~ p > .only-dollars-late,
+.radio-group:has(div > input#radio-dollars-acq:not(:checked)) ~ p > .only-dollars-acq {
+  display: none;
+}
+.radio-group:has(div > input#radio-money-all:not(:checked)) ~ p > .only-money-all,
+.radio-group:has(div > input#radio-money-seed:not(:checked)) ~ p > .only-money-seed,
+.radio-group:has(div > input#radio-money-early:not(:checked)) ~ p > .only-money-early,
+.radio-group:has(div > input#radio-money-late:not(:checked)) ~ p > .only-money-late,
+.radio-group:has(div > input#radio-money-acq:not(:checked)) ~ p > .only-money-acq {
+  display: none;
+}
+
 html {
   position: relative;
 }
