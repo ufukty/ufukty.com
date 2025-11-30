@@ -29,6 +29,8 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
+    position: relative;
+    z-index: 1;
 
     & > li {
       position: relative;
@@ -78,5 +80,22 @@ html {
         }
       }
     }
+  }
+
+  & > .shade {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background-color: light-dark(#fff, #000);
+    filter: blur(50px);
+    z-index: 0;
+    transition: 120ms all ease-out;
+    opacity: 0.5;
+  }
+
+  &:not(:hover) > .shade {
+    opacity: 0;
   }
 }
