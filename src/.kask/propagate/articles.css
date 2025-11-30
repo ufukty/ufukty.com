@@ -46,6 +46,13 @@ main {
     border-radius: 8px;
   }
 
+  .preheading {
+    border: 1px solid light-dark(#000, #fff);
+    border-radius: 9999px;
+    padding: 8px 15px;
+    width: max-content;
+  }
+
   a {
     word-wrap: anywhere;
   }
