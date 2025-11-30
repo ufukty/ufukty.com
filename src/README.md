@@ -1,10 +1,6 @@
 # Ufuktan Yıldırım
 
-Identifying common problems and building MVPs.
-
-Contact: <a href="mailto:ufukty@gmail.com">ufukty@gmail.com</a>
-
-Profiles:
+<a href="mailto:ufukty@gmail.com">ufukty@gmail.com</a>
 
 -   [GitHub](https://github.com/ufukty)
 -   [LinkedIn](https://linkedin.com/in/ufukty)
