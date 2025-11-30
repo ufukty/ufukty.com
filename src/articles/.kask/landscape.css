@@ -1,72 +1,3 @@
-@media screen and (prefers-color-scheme: dark) {
-  main img {
-    filter: invert() hue-rotate(180deg);
-  }
-}
-
-main {
-  display: contents;
-
-  img {
-    width: auto;
-    border-radius: 0;
-  }
-
-  & > p:has(img) {
-    width: 100%;
-    height: min-content;
-    grid-column: 1 / 4;
-    text-align: center;
-    overflow-x: scroll;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  a {
-    word-wrap: anywhere;
-  }
-
-  .radio-group {
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 1px;
-
-    max-width: 100%;
-    overflow: hidden;
-
-    border: 1px solid light-dark(#eee, #333);
-    border-radius: 6px;
-    padding: 2px;
-
-    & > div {
-      overflow: hidden;
-      flex-shrink: 2;
-
-      & > input {
-        display: none;
-      }
-
-      & > label {
-        cursor: pointer;
-        display: block;
-        padding: 10px clamp(0px, 3vw, 20px) 8px;
-        text-wrap: nowrap;
-        border-radius: 4px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-      }
-
-      &:has(input:checked) > label {
-        color: light-dark(#000, #fff);
-        background-color: light-dark(#eee, #333);
-      }
-    }
-  }
-}
-
 .radio-group:has(div > input#radio-deals-seed:not(:checked)) ~ p > .only-deals-seed,
 .radio-group:has(div > input#radio-deals-early:not(:checked)) ~ p > .only-deals-early,
 .radio-group:has(div > input#radio-deals-late:not(:checked)) ~ p > .only-deals-late,
@@ -94,68 +25,11 @@ main {
 .radio-group:has(div > input#radio-dollars-acq:not(:checked)) ~ p > .only-dollars-acq {
   display: none;
 }
+
 .radio-group:has(div > input#radio-money-all:not(:checked)) ~ p > .only-money-all,
 .radio-group:has(div > input#radio-money-seed:not(:checked)) ~ p > .only-money-seed,
 .radio-group:has(div > input#radio-money-early:not(:checked)) ~ p > .only-money-early,
 .radio-group:has(div > input#radio-money-late:not(:checked)) ~ p > .only-money-late,
 .radio-group:has(div > input#radio-money-acq:not(:checked)) ~ p > .only-money-acq {
   display: none;
-}
-
-html {
-  position: relative;
-}
-
-@media screen and (width<1000px) {
-  #toc {
-    display: none;
-  }
-}
-
-@media screen and (1000px<width<1500px) {
-  #toc {
-    transition: 120ms opacity ease-out;
-
-    &:not(:hover) {
-      opacity: 0.1;
-      width: calc(50% - min(100%, 700px) / 2 - 2 * calc(1em + 1vw));
-    }
-
-    & > ul > li {
-      text-overflow: ellipsis;
-      overflow: hidden;
-
-      & > a {
-        white-space: nowrap;
-      }
-    }
-  }
-}
-
-#toc {
-  grid-column: 3 / 4;
-  grid-row: 4;
-
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  left: calc(1em + 1vw);
-
-  margin: 0 auto;
-  grid-row: 3;
-  padding: 16px;
-  line-height: 2em;
-
-  font-size: 0.9rem;
-
-  & > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    & > li > a {
-      padding: 2px 0;
-    }
-  }
 }

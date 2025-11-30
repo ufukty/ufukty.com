@@ -1,0 +1,175 @@
+@media screen and (prefers-color-scheme: dark) {
+  main img.invert {
+    filter: invert() hue-rotate(180deg);
+  }
+}
+
+main {
+  display: contents;
+
+  & > * {
+    grid-column: 2 / 3;
+    max-width: 100%;
+  }
+
+  & > p:has(:not(.bleeding)) > img {
+    max-width: 100%;
+  }
+
+  & > p:has(.bleeding) {
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  & > p:has(.bleeding.ppi) {
+    width: 100%;
+    height: min-content;
+    overflow-x: scroll;
+    box-sizing: border-box;
+
+    & > .bleeding.ppi {
+      width: max-content;
+    }
+  }
+
+  & p:has(.bleeding:not(.ppi)) {
+    width: auto;
+    max-width: 100%;
+
+    & > .bleeding {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  & .card {
+    border-radius: 8px;
+  }
+
+  a {
+    word-wrap: anywhere;
+  }
+
+  .radio-group {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1px;
+
+    max-width: 100%;
+    overflow: hidden;
+
+    border: 1px solid light-dark(#eee, #333);
+    border-radius: 6px;
+    padding: 2px;
+
+    & > div {
+      overflow: hidden;
+      flex-shrink: 2;
+
+      & > input {
+        display: none;
+      }
+
+      & > label {
+        cursor: pointer;
+        display: block;
+        padding: 10px clamp(0px, 3vw, 20px) 8px;
+        text-wrap: nowrap;
+        border-radius: 4px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      &:has(input:checked) > label {
+        color: light-dark(#000, #fff);
+        background-color: light-dark(#eee, #333);
+      }
+    }
+  }
+}
+
+html {
+  position: relative;
+}
+
+@media screen and (width<1000px) {
+  #toc {
+    display: none;
+  }
+}
+
+#toc {
+  grid-column: 3 / 4;
+  grid-row: 4;
+
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(1em + 1vw);
+
+  margin: 0 auto;
+  grid-row: 3;
+  padding: 16px;
+  line-height: 2em;
+
+  font-size: 0.9rem;
+
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & > li {
+      position: relative;
+      width: max-content;
+
+      & > a {
+        padding: 2px 0;
+        transition: 120ms 60ms opacity ease-out;
+        position: relative;
+        z-index: 1;
+        transition: 120ms all ease-out;
+      }
+
+      & > .skeleton {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: 0;
+        background-color: light-dark(#ccc, #333);
+        opacity: 0;
+        transition: 120ms all ease-out;
+      }
+    }
+  }
+
+  &:not(:hover) {
+    & > ul {
+      max-width: 20px;
+      overflow: hidden;
+
+      & > li {
+        & > a {
+          opacity: 0;
+          filter: blur(5px);
+        }
+
+        & > .skeleton {
+          min-width: 20px;
+          max-width: 20px;
+          max-height: 5px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
