@@ -23,23 +23,7 @@
 
   <body>
     {{template "nav" .}}
-
-    {{with .Markdown}}{{with .Toc}}
-    <aside id="toc">
-      {{with .Children}}{{with (index . 0)}}
-      <ul>
-        {{range .Children}}
-        <li><a href="#{{.ID}}" class="toc{{.Level}}">{{.Title}}</a>
-          <div class="skeleton"></div>
-        </li>
-        {{end}}
-        <li><a href="#">↑</a>
-          <div class="skeleton"></div>
-        </li>
-      </ul>
-      {{end}}{{end}}
-    </aside>
-    {{end}}{{end}}
+    {{template "toc" .}}
 
     <main>{{.Markdown.Content}}</main>
   </body>

@@ -1,0 +1,24 @@
+{{define "toc"}}
+{{with .Markdown}}
+{{with .Toc}}
+{{with .Children}}
+{{with (index . 0)}}
+{{if gt (len .Children) 0}}
+<aside id="toc">
+  <ul>
+    {{range .Children}}
+    <li><a href="#{{.ID}}" class="toc{{.Level}}">{{.Title}}</a>
+      <div class="skeleton"></div>
+    </li>
+    {{end}}
+    <li><a href="#">↑</a>
+      <div class="skeleton"></div>
+    </li>
+  </ul>
+  {{end}}
+</aside>
+{{end}}
+{{end}}
+{{end}}
+{{end}}
+{{end}}
