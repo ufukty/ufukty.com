@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251001.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.40.3"
+  },
+  "license": "ISC",
+  "name": "ufukty.com",
+  "scripts": {
+    "deploy": "npx wrangler deploy"
+  },
+  "version": "1.0.0"
+}
