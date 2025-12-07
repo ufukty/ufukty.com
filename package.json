@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "license": "ISC",
+  "main": "index.js",
   "name": "ufukty.com",
   "scripts": {
     "build": "vite build",

@@ -1,4 +1,5 @@
 name = "ufukty"
+main = "worker/index.ts"
 compatibility_date = "2025-12-06"
 preview_urls = true
 
@@ -6,6 +7,7 @@ preview_urls = true
 command = "npm run build"
 
 [assets]
+binding = "ASSETS"
 directory = "./build"
 html_handling = "none"
 not_found_handling = "none"
