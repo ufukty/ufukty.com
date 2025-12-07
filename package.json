@@ -11,10 +11,8 @@
   "main": "index.js",
   "name": "ufukty.com",
   "scripts": {
-    "build": "vite build",
-    "deploy": "npx wrangler deploy",
-    "dev": "vite --host",
-    "preview": "vite preview"
+    "build": "bash .cloudflare/build.sh",
+    "deploy": "npx wrangler deploy"
   },
   "version": "1.0.0"
 }
