@@ -110,22 +110,26 @@ nav {
   }
 }
 
-pre {
-  max-width: 100%;
-  text-wrap: wrap;
-}
-
 pre.chroma {
+  width: 100vw;
+  grid-column: 1 / 4;
+  text-wrap: wrap;
+  overflow: scroll;
+  padding-left: max(calc((100vw - min(calc(700px - 2 * (1vw + 1em)), 100%) - 2 * (1vw + 1em)) / 2), (1vw + 1em));
+  scrollbar-width: none;
+
+  & > code {
+    width: max-content;
+    display: block;
+    padding-right: calc(1vw + 1em);
+  }
+
   user-select: initial;
   -webkit-user-select: initial;
 
   font-optical-sizing: auto;
   line-height: 1.24;
   font-size: 11pt;
-
-  width: max-content;
-  max-width: 100%;
-  overflow-x: scroll;
 
   counter-reset: line;
 
