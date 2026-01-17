@@ -114,3 +114,68 @@ pre {
   max-width: 100%;
   text-wrap: wrap;
 }
+
+pre.chroma {
+  user-select: initial;
+  -webkit-user-select: initial;
+
+  font-optical-sizing: auto;
+  line-height: 1.24;
+  font-size: 11pt;
+
+  width: max-content;
+  max-width: 100%;
+  overflow-x: scroll;
+
+  counter-reset: line;
+
+  color: light-dark(#444, #aaa);
+
+  * {
+    font-family: "Fira Code", monospace !important;
+    font-weight: 400;
+  }
+
+  .nx {
+    color: light-dark(#444, #aaa);
+  }
+
+  .s,
+  .s1,
+  .s2,
+  .o,
+  .nv,
+  .kc {
+    color: light-dark(#0550ae, #527aac);
+  }
+
+  .m,
+  .kt {
+    color: light-dark(#008775, #56908c);
+  }
+
+  .k,
+  .kn,
+  .kd {
+    color: light-dark(#cf222e, #c96168);
+  }
+
+  .kr,
+  .nf,
+  .nt {
+    color: light-dark(#8250df, #a286d6);
+  }
+
+  .nb {
+    color: light-dark(#c44886, #db7eac);
+  }
+
+  .cm,
+  .cp {
+    color: light-dark(#6e7781, #78a7dd);
+  }
+
+  .c1 {
+    color: light-dark(#6e7781, #7f858c);
+  }
+}
