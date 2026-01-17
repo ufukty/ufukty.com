@@ -121,7 +121,7 @@ pre.chroma {
   & > code {
     width: max-content;
     display: block;
-    padding-right: calc(1vw + 1em);
+    padding-right: max(calc((100vw - min(calc(700px - 2 * (1vw + 1em)), 100%) - 2 * (1vw + 1em)) / 2), (1vw + 1em));
   }
 
   user-select: initial;
