@@ -7,7 +7,7 @@ set -ve
   git clone https://github.com/ufukty/kask
   cd kask
   git fetch --tags --quiet
-  git checkout "$(git tag --list 'v*' | sort -Vr | head -n 1)"
+  git checkout v0.9.0
   make install
 )
 
