@@ -1,3 +1,5 @@
+{{define "title"}}{{.Node.Title}}{{end}}
+
 {{define "page"}}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{template "title"}}
+    <title>{{template "title" .}}</title>
 
     <meta name="title" content="Ufuktan Yıldırım">
 
@@ -20,8 +22,13 @@
 
   <body>
     {{template "nav" .}}
-    <main>{{template "content" .}}</main>
+    {{template "toc" .}}
+
+    <main>{{template "page-content" .}}</main>
   </body>
 
 </html>
 {{end}}
+
+{{define "markdown-page"}}{{template "page" .}}{{end}}
+{{define "page-content"}}{{trustedHtml .Markdown.Content}}{{end}}
