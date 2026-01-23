@@ -183,3 +183,8 @@ pre.chroma {
     color: light-dark(#6e7781, #7f858c);
   }
 }
+
+footer {
+  margin-block: 50px 100px;
+  grid-column: 2 / 3;
+}
