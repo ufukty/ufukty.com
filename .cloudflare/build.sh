@@ -4,10 +4,8 @@ set -ve
 
 (
   cd "$(mktemp -d)"
-  git clone https://github.com/ufukty/kask
+  git clone --depth 1 --branch v2.3.1 https://github.com/ufukty/kask
   cd kask
-  git fetch --tags --quiet
-  git checkout v0.9.0
   make install
 )
 
