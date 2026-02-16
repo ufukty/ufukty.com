@@ -1,13 +1,13 @@
 name = "ufukty"
-main = "worker/index.ts"
 compatibility_date = "2025-12-06"
 preview_urls = true
 
+[build]
+command = "bash .workers/build.sh"
+
 [assets]
-binding = "ASSETS"
 directory = "./public"
-html_handling = "none"
-not_found_handling = "none"
+not_found_handling = "404-page"
 
 [[routes]]
 pattern = "ufukty.com"
