@@ -9,4 +9,4 @@ set -ve
   make install
 )
 
-~/bin/kask build -in src -out public -domain / -v
+~/bin/kask build -in src -out public -domain / -v -cfw
