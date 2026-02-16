@@ -4,7 +4,7 @@ set -ve
 
 (
   cd "$(mktemp -d)"
-  git clone --depth 1 --branch feature/extensionless-urls https://github.com/ufukty/kask
+  git clone --depth 1 --branch v0.14.0 https://github.com/ufukty/kask
   cd kask
   make install
 )
