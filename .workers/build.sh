@@ -2,11 +2,5 @@
 
 set -ve
 
-(
-  cd "$(mktemp -d)"
-  git clone --depth 1 --branch v0.14.0 https://github.com/ufukty/kask
-  cd kask
-  make install
-)
-
-~/bin/kask build -in src -out public -domain / -v -cfw
+GOBIN="$PWD" go install go.ufukty.com/kask@v0.16.1
+./kask build -in src -out public -domain https://ufukty.com -v -cfw
