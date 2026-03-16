@@ -10,10 +10,8 @@
 
 ## Subs
 
-- [kask.ufukty.com](https://kask.ufukty.com)  
-  Site compiler
-- [gohandlers.ufukty.com](https://gohandlers.ufukty.com)  
-  Type-safe Go backends
+- [kask.ufukty.com](https://kask.ufukty.com)
+- [gohandlers.ufukty.com](https://gohandlers.ufukty.com)
 
 ## Profiles
 
