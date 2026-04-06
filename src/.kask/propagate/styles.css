@@ -120,8 +120,8 @@ pre.chroma {
 
   & > code {
     width: max-content;
-    display: block;
-    padding-right: max(calc((100vw - min(calc(700px - 2 * (1vw + 1em)), 100%) - 2 * (1vw + 1em)) / 2), (1vw + 1em));
+    display: inline;
+    text-wrap: nowrap;
   }
 
   user-select: initial;
