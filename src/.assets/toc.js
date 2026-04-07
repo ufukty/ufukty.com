@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toc.style.display = isWide && isTall ? "block" : "none";
   }
 
+  window.addEventListener("load", toggle);
   window.addEventListener("resize", toggle);
   toggle();
 });
