@@ -78,15 +78,13 @@ html {
 
   & > .shade {
     position: absolute;
-    top: -10%;
-    left: 0;
-    width: 120%;
-    height: 120%;
-    background-color: light-dark(#fff, #000);
+    inset: -20% -20% -20% -40%;
+    background-color: light-dark(#fff8, #0008);
     filter: blur(50px);
+    backdrop-filter: blur(50px);
     z-index: 0;
     transition: 120ms all ease-out;
-    opacity: 0.5;
+    pointer-events: none;
   }
 
   &:not(:hover) > .shade {
