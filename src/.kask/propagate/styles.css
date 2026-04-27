@@ -112,7 +112,7 @@ nav {
 
 code,
 code * {
-  font-family: "Fira Code", monospace;
+  font-family: "Menlo", monospace;
   font-weight: 400;
   font-optical-sizing: auto;
   line-height: 1.24;
