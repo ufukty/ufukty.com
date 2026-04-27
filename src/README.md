@@ -4,7 +4,7 @@
 
 ## Articles
 
-- [Introducing GoMethods](./articles/3.gomethods.md)
+- [Introducing Golistics](./articles/3.golistics.md)
 - [Startup Landscape in Turkiye](./articles/2.landscape.md)
 - [On Embracing Creativity](./articles/1.creativity.md)
 
