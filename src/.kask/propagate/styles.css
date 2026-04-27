@@ -110,6 +110,15 @@ nav {
   }
 }
 
+code,
+code * {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  line-height: 1.24;
+  font-size: 11pt;
+}
+
 pre.chroma {
   width: 100vw;
   grid-column: 1 / 4;
@@ -127,18 +136,9 @@ pre.chroma {
   user-select: initial;
   -webkit-user-select: initial;
 
-  font-optical-sizing: auto;
-  line-height: 1.24;
-  font-size: 11pt;
-
   counter-reset: line;
 
   color: light-dark(#444, #aaa);
-
-  * {
-    font-family: "Fira Code", monospace !important;
-    font-weight: 400;
-  }
 
   .nx {
     color: light-dark(#444, #aaa);
