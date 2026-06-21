@@ -18,10 +18,15 @@
     {{range .}}
     <link rel="stylesheet" href="{{.}}">{{end}}
     {{end}}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    {{template "nav" .}}
+    <nav><a id="home-button" href="/">Ufuktan Yıldırım</a></nav>
+
     {{template "toc" .}}
 
     <main>{{template "page-content" .}}</main>
