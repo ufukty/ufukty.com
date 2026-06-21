@@ -10,8 +10,9 @@
 
 ## Subs
 
-- [kask.ufukty.com](https://kask.ufukty.com)
-- [gohandlers.ufukty.com](https://gohandlers.ufukty.com)
+- [Gohandlers — Documentation](https://gohandlers.ufukty.com)
+- [Gonfique Playground](https://gonfique.ufukty.com)
+- [Kask — Documentation](https://kask.ufukty.com)
 
 ## Profiles
 
