@@ -1,6 +1,6 @@
-# Ufuktan Yıldırım
+# Profile
 
-ufukty@gmail.com
+A computer engineer practicing solo software development. Learning distributed systems and backend development on Logbook for a while now. Previously worked on program synthesis to discover the open problems in applying genetic programming to imperative and context-sensitive languages. Spinning up new projects on GitHub every other month, mainly developer tools. Maintaining (some of) them.
 
 ## Articles
 
