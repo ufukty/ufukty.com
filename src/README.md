@@ -1,6 +1,6 @@
 # Ufuktan Yıldırım
 
-<a href="mailto:ufukty@gmail.com">ufukty@gmail.com</a>
+ufukty@gmail.com
 
 ## Articles
 
