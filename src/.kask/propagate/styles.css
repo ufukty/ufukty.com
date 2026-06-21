@@ -10,10 +10,10 @@ html {
   color: light-dark(#444, #ddd);
   background-color: light-dark(#fff, #000);
 
-  font-family: Arial;
+  font-family: "Akt", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 300;
 
   padding: 0;
   margin: 0;
@@ -47,6 +47,7 @@ h4,
 h5,
 h6 {
   font-size: 1em;
+  font-weight: 400;
   color: light-dark(#000, #eee);
 }
 
