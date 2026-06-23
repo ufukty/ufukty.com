@@ -17,8 +17,6 @@ A computer engineer practicing solo software development. Learning distributed s
 ## Me on web
 
 - [GitHub](https://github.com/ufukty)
-- [LinkedIn](https://linkedin.com/in/ufukty)
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ufukty)
-- [OpenVSX Registry](https://open-vsx.org/namespace/ufukty)
-- [StackOverflow](https://stackoverflow.com/users/10272920/ufukty)
 - [Reddit](https://www.reddit.com/user/ufukty/comments/?sort=top)
+- [LinkedIn](https://linkedin.com/in/ufukty)
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ufukty) - [OpenVSX Registry](https://open-vsx.org/namespace/ufukty)
