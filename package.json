@@ -2,5 +2,9 @@
   "name": "ufukty.com",
   "devDependencies": {
     "wrangler": "4.105.0"
+  },
+  "scripts": {
+    "deploy": "bash scripts/deploy.sh",
+    "preview": "bash scripts/preview.sh"
   }
 }
