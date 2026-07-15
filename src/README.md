@@ -16,6 +16,7 @@ A computer engineer practicing solo software development. Learning distributed s
 
 ## Me on web
 
+- [ORCID](https://orcid.org/0009-0008-1980-6641)
 - [LinkedIn](https://linkedin.com/in/ufukty)
 - [Reddit](https://www.reddit.com/user/ufukty/comments/?sort=top)
 - [GitHub](https://github.com/ufukty) - [GitLab](https://gitlab.com/ufukty) - [Codeberg](https://codeberg.org/ufukty)
