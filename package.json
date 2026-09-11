@@ -1,7 +1,7 @@
 {
   "name": "ufukty.com",
   "devDependencies": {
-    "wrangler": "4.105.0"
+    "wrangler": "4.131.0"
   },
   "scripts": {
     "deploy": "bash scripts/deploy.sh",
